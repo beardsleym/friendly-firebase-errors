@@ -1,0 +1,20 @@
+{
+  "name": "friendly-firebase-errors",
+  "version": "0.1.1",
+  "description": "A utility for converting Firebase Auth errors into user-friendly messages.",
+  "main": "dist/index.js", 
+  "types": "dist/index.d.ts", 
+  "files": ["dist"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "publish": "npm publish"
+  },
+  "keywords": ["firebase", "auth", "errors", "friendly-messages"],
+  "author": "Matthew Beardsley",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
