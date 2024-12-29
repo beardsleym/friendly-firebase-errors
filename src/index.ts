@@ -3,7 +3,7 @@ import { DEFAULT_MESSAGES } from "./default-messages";
 type FirebaseErrorCode = keyof typeof DEFAULT_MESSAGES;
 
 export type FirebaseError = {
-  code: FirebaseErrorCode;
+  code?: FirebaseErrorCode;
   message?: string;
 };
 
@@ -24,8 +24,8 @@ export function friendlyFirebaseError(
 ): FriendlyErrorResult {
   const { code } = error;
   const friendlyMessage =
-    customErrorMap[code] ||
-    DEFAULT_MESSAGES[code] ||
+    (code && customErrorMap[code]) ||
+    (code && DEFAULT_MESSAGES[code]) ||
     "An unexpected error occurred. Please try again.";
 
   return {

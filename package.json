@@ -1,6 +1,6 @@
 {
   "name": "friendly-firebase-errors",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "A utility for converting Firebase Auth errors into user-friendly messages.",
   "main": "dist/index.js", 
   "types": "dist/index.d.ts", 
